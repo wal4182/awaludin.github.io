@@ -1,0 +1,92 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.text-blue {
+  color: #0090ff;
+}
+section {
+  padding: 90px 0 70px;
+}
+section h1.title {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+/* Navigation */
+nav.navbar-expand-lg {
+  min-height: 80px;
+}
+.navbar-brand img {
+  height: 40px;
+}
+
+nav.navbar-expand-lg.navbar-dark.bg-blue {
+  background-color: #0090ff;
+}
+.navbar-nav a.nav-link {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* End navigation */
+
+
+/* Hero */
+section.hero {
+  padding-top: 150px;
+}
+section.hero,
+section#portfolio, 
+section#contact {
+  background-color: #1b242d;
+  color: white;
+}
+
+img.avatar {
+  height: 250px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1.name {
+  font-size: 50px;
+  text-transform: uppercase;
+}
+.line {
+  display: block;
+  height: 1px;
+  margin: 20px 0 20px;
+  background-color: #fff;
+}
+/* End Hero */
+
+/* Portfolio */
+.card {
+  transition: all .2s ease-in-out;
+  border: none;
+  background-color: transparent;
+}
+.card:hover {
+  transform: scale(1.03);
+  background-color: #131b22;
+}
+
+.caption-container {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+  /* display: none; */
+}
+.card:hover .caption-container{
+  display: block;
+  max-height: 500px;
+}
+/* End Portfolio */
+
+/* Footer */
+footer {
+  background-color: #0073cc;
+  padding: 20px 0 20px;
+}
+

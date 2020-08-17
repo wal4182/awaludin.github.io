@@ -1,0 +1,256 @@
+* {
+    scroll-behavior: smooth;
+}
+p {
+    font-size: 14px;
+    color: #5e5e5e;
+}
+h2 {
+    font-size: 30px;
+    color: #00a1eb;
+    font-weight: bold;
+}
+h3 {
+    font-size: 20px;
+    color: #00a1eb;
+    font-weight: bold;
+}
+.btn {
+    font-size: 14px;
+    font-weight: bold;
+}
+.btn-primary {
+    background-color: #000;
+}
+.btn-primary:focus, .btn-primary:active, .btn-primary:hover  {
+    background-color: #000 !important;
+    box-shadow: none;
+    outline: none;
+}
+/* HEADER */
+#header .navbar {
+    background-color: transparent;
+    transition: 0.5s;
+    height: 63px;
+    z-index: 999999;
+}
+#header .navbar.scrolled {
+	background: #00a1eb !important;
+	transition: 0.5s;
+}
+#header .navbar-brand {
+    font-size: 22px;
+}
+#header .navbar-brand span {
+    font-weight: bold;
+}
+.navbar-dark .navbar-nav .nav-link:hover::after,
+.navbar-dark .active::after,
+.navbar-dark a.btn.btn-primary:hover::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid white;
+    font-weight: bold;
+}
+
+#header .navbar-dark .navbar-nav .nav-link {
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+}
+.navbar-nav {
+    background-color: #00a1eb;
+    padding: 20px 30px;
+}
+
+/* HOME */
+#home {
+    background-image: url(img/banner.png);
+    width: 100%;
+    height: 100vh;
+    display: table;
+    color: white;
+    text-align: center;
+}
+#home .landing-text {
+    display: table-cell;
+    vertical-align: middle;
+}
+#home .content h1 {
+    font-weight: bold;
+}
+#home .content p {
+    color: white;
+}
+
+
+/* O NAS */
+#onas {
+    padding: 130px 95px;
+}
+#onas h2::after {
+    content: '';
+    display: block;
+    border-bottom: 1px solid #acacac;
+    width: 70px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#onas .btn-primary {
+    margin-top: 20px;
+}
+/* ASORTYMENT */
+#asortyment {
+    padding: 130px 95px;
+    background-color: #f1f9fd;
+}
+#asortyment h2::after {
+    content: '';
+    display: block;
+    border-bottom: 1px solid #acacac;
+    width: 70px;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;    
+}
+#asortyment .carousel-item .box {
+    position: relative;
+}
+.carousel-item img.img-fluid {
+    height: 200px;
+}
+
+#asortyment .carousel .captionBox {
+    background-color: #3083bec4;
+    height: 200px;
+    width: 200px;
+    display: table;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+}
+#asortyment .carousel .captionBox .caption {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+
+}
+#asortyment .carousel .captionBox .caption h6 {
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+}
+#asortyment .carousel .captionBox .caption p {
+    color: white;
+}
+#asortyment .but {
+    margin-left: auto !important;
+}
+.carousel-control-prev {
+    z-index: 10000;
+    margin-left: -10%;
+}
+
+
+/* współpraca */
+#współpraca {
+    padding: 100px 90px;
+    text-align: center;
+}
+
+#współpraca .iconBox {
+    background-color: #00a1eb;
+    border-radius: 100%;
+    height: 120px;
+    width: 120px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#współpraca .iconBox .icon {
+    height: 64px;
+    margin-top: 28px;
+}
+#współpraca h3::after {
+    content: '';
+    display: block;
+    border-bottom: 1px solid #acacac;
+    width: 70px;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+/* KONTAKT */
+#kontakt {
+    background-color: #00a1eb;
+    text-align: right;
+}
+#kontakt .kontakt {
+    margin-top: 5.5rem;
+}
+#kontakt .imgBox {
+    position: relative;
+}
+#kontakt .overlay {
+    display: block;
+    position: absolute;
+    background-color: #00a1eb75;
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+#kontakt h3, #kontakt p{
+    color: white;
+}
+#kontakt .btn.btn-primary{
+    color: #00a1eb;
+}
+/* FOOTER */
+#footer .container.c2 {
+    position: relative;
+}
+#footer .footer1 {
+    padding: 50px 30px;
+    background-color: #f8f8f8;
+}
+#footer .footer1 h4 {
+    font-size: 20px;
+}
+#footer .footer1 ul li{
+    list-style: none;
+    margin-left: -40px;
+    margin-bottom: 16px
+}
+#footer .footer1 ul li a{
+    color: #747474;
+    text-decoration: none;
+    font-size: 14px;
+}
+#footer .footer1 a:hover {
+    color: #444444;
+    text-decoration: none;
+    font-size: 14px;
+}
+#footer .footer2 {
+    padding: 30px 30px;
+    background-color: #737373;
+    color: white;
+}
+#footer .cpryt p {
+    color: white;
+    margin: 0;
+}
+#footer .cpryt .left, .cpryt .right {
+    display: inline;
+}
+
+@media (min-width: 992px) {
+    .navbar-nav {
+        background-color: transparent;
+        padding: 20px 30px;
+    }
+
+
+}
