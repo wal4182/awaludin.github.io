@@ -29,6 +29,12 @@ nav.navbar-expand-lg.navbar-dark.bg-blue {
   text-transform: uppercase;
   font-weight: bold;
 }
+.navbar-dark .navbar-nav .nav-link:hover::after,
+.active::after {
+  content: '';
+  display: block;
+  border-bottom: 3px solid #fff;
+}
 /* End navigation */
 
 
